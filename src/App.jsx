@@ -1,8 +1,10 @@
 // import React from "react";
-import { Greeting } from "./components/Greeting";
-import { SocialLinks } from "./components/SocialLinks";
+// import { Greeting } from "./components/Greeting";
+// import { SocialLinks } from "./components/SocialLinks";
 import { Header } from "./components/Header";
 import { Section } from "./components/Section";
+import { HelpfulResource } from "./components/HelpfulResource";
+import { AboutMe } from "./components/AboutMe";
 
 
 function App() {
@@ -24,6 +26,29 @@ function App() {
     {/* <Greeting /> */}
     {/* <SocialLinks /> */}
     </Section>
+    <Section title="Helpful resources">
+      <HelpfulResource
+      link="https://bobbyhadz.com/blog/react-open-link-in-new-tab"
+      label="How to Open a link in a new tab in React by Borislav Hadzhiev"
+      />
+      <HelpfulResource
+      link="https://www.w3schools.com/howto/howto_js_copy_clipboard.asp"
+      label="How to Copy Text to Clipboard by W3 Schools"
+      />
+      <HelpfulResource
+      link="https://atlas-jswank.github.io/blog/jsx/"
+      label="What is JSX? by Jeremiah Swank"
+      />
+      <HelpfulResource
+      link="https://www.youtube.com/watch?v=CgkZ7MvWUAA&t=1192s"
+      label="React Full Course for Free by Bro Code"
+      />
+      <HelpfulResource
+      link="https://atlas-jswank.github.io/blog/hello-react/"
+      label="Hello React by Jeremiah Swank"
+      />
+    </Section>
+    <AboutMe />
     </>
   );
 }
